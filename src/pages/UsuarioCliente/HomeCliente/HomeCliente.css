@@ -1,0 +1,56 @@
+.container-home-cliente{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.half-card{
+    display: flex;
+    gap: 10px;
+}
+.half-card img{
+    height: 70px;
+}
+
+.cardCliente{
+    display: flex;
+    gap: 50px;
+}
+.cardCliente > .primary-btn{
+    height: 60px;
+}
+
+.half-card > .text-produto{
+    width: 120px;
+}
+
+.search-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.svgIcon {
+    transition: all 0.3s ease;
+}
+
+.svgIcon:hover {
+    scale: 1.2;
+}

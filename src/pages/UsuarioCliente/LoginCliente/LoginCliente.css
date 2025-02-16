@@ -1,0 +1,83 @@
+.container-login-cliente {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        gap: 20px;
+
+        & .div-ipts {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 100%;
+
+            & input {
+                border: 3px solid #2F88FF;
+                border-radius: 10px;
+                font-size: 1rem;
+                padding: 5px 20px;
+            }
+
+            & label {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
+
+.chkbox-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    & .stay-conect-label {
+        font-weight: 300;
+        color: grey;
+    }
+}
+
+.primary-btn {
+    border: 3px solid #2F88FF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #2F88FF;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.secondary-btn {
+    border: 3px solid #2F88FF;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.primary-btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
