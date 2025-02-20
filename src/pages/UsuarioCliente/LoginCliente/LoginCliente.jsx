@@ -18,7 +18,7 @@ export const LoginCliente = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("https://backend-farmacias.onrender.com/auth/login", {
+            const response = await axios.post("https://backend-farmacias-production.up.railway.app/auth/login", {
                 email,
                 senha,
             });

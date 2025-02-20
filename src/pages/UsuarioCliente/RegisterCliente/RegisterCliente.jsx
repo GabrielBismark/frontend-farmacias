@@ -44,7 +44,7 @@ export const RegisterCliente = () => {
     }
 
     try {
-      await axios.post("https://backend-farmacias.onrender.com/auth/register", {
+      await axios.post("https://backend-farmacias-production.up.railway.app/auth/register", {
         nome,
         email,
         senha,
