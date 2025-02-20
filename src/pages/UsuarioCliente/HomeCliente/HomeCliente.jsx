@@ -21,7 +21,7 @@ export const HomeCliente = () => {
   useEffect(() => {
     const fetchProdutos = async () => {
       try {
-        const response = await axios.get(`${process.env.API_LINK}/fornecedor/produto/`); // Atualize com a URL da sua API
+        const response = await axios.get(`${process.env.REACT_APP_API_LINK}/fornecedor/produto/`); // Atualize com a URL da sua API
         setProdutos(response.data);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
@@ -34,7 +34,7 @@ export const HomeCliente = () => {
   // Manipula a mudança da consulta de pesquisa
   const handleSearch = async () => {
     try {
-      const response = await axios.get(`${process.env.API_LINK}/produtos?search=${searchQuery}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_LINK}/produtos?search=${searchQuery}`);
       setProdutos(response.data);
     } catch (error) {
       console.error("Erro ao buscar produto:", error);

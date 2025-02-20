@@ -44,7 +44,7 @@ export const RegisterCliente = () => {
     }
 
     try {
-      await axios.post(`${process.env.API_LINK}/auth/register`, {
+      await axios.post(`${process.env.REACT_APP_API_LINK}/auth/register`, {
         nome,
         email,
         senha,
