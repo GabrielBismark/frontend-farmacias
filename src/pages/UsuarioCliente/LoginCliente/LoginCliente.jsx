@@ -18,7 +18,7 @@ export const LoginCliente = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_LINK}/auth/login`, {
+            const response = await axios.post("https://backend-farmacias.onrender.com/auth/login", {
                 email,
                 senha,
             });
